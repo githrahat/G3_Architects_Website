@@ -13,10 +13,9 @@ a{
   text-decoration: none;
 }
 .btn-primary{
-  margin-bottom: 30px;
   border-radius: 8px;
   background: #FF900E;
-  padding: 15px 20px;
+  padding: 20px 25px;
   border: none;
 }
 /* Header Styles */
@@ -64,4 +63,31 @@ nav li a{
   color: var(--dark-03, #727272);
   font-size: 16px;
   font-weight: 400;
+}
+.banner-img{
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+  header{
+    padding: 20px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: 20px;
+  }    
+}
+/* Tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width:960px) {
+  nav{
+    flex-direction: column;
+  }
+  header{
+    padding: 50px 40px;
+  }
 }
